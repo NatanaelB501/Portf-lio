@@ -75,9 +75,20 @@ body {
 img {
     width: 600px; /* Largura fixa da imagem */
     height: 600px; /* Altura fixa da imagem */
-    border-radius: 92px; /* Borda arredondada */
+    border-radius: 20px; /* Borda arredondada */
 }
 
+/* Estilo para o contêiner das imagens */
+.imagem-container {
+    position: relative; /* Define o contexto de posicionamento */
+}
+
+.imagemEu {
+    position: absolute; /* Posiciona a imagem de acordo com o contêiner */
+    top: -6px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: -6px; /* Ajusta a posição horizontal (pode ser qualquer valor) */
+    z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
+}
 
 /* Regras de mídia para dispositivos móveis */
 @media (max-width: 768px) {
@@ -103,12 +114,29 @@ img {
         width: 100%; /* Ajusta a largura do conteúdo */
     }
 
-    img {
-        width: 100%;
-        max-width: 200px; /* Largura máxima da imagem */
-        height: auto; /* Mantém a proporção */
-        border-radius: 50%; /* Bordas arredondadas */
-    }
+    /* Estilo para imagens */
+img {
+    width: 100%;
+    max-width: 200px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 3%; /* Bordas arredondadas */
+}
+
+/* Estilo para o contêiner das imagens */
+.imagem-container {
+    position: relative; /* Define o contexto de posicionamento */
+}
+
+.imagemEu {
+    width: 100%;
+    max-width: 200px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 3%; /* Bordas arredondadas */
+    position: absolute; /* Posiciona a imagem de acordo com o contêiner */
+    top: -10px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: -3px; /* Ajusta a posição horizontal (pode ser qualquer valor) */
+    z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
+}
 
     .apresentacao__conteudo__titulo {
         font-size: 24px; /* Aumenta o tamanho da fonte */
