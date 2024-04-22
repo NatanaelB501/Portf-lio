@@ -133,6 +133,10 @@ body {
         width: 100%; /* Ajusta a largura do conteúdo */
     }
 
+    .imagem-container{
+        margin: 0 26.8px 0 0;
+    }
+
         /*Isso deu muito trabalho, NÃO MEXA NESSA IMAGENS */
         /* Estilo para imagens */
     .imagemEu {
