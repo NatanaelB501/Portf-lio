@@ -77,6 +77,7 @@ body {
 /* Estilo para o contêiner das imagens */
 .imagem-container {
     position: relative; /* Define o contexto de posicionamento */
+    margin: 0 25% 0 0;
 }
 
 /* Estilo para imagens */
@@ -85,8 +86,8 @@ body {
     height: 600px; /* Altura fixa da imagem */
     border-radius: 20px; /* Borda arredondada */
     position: absolute;
-    top: 1px; /* Ajusta a posição vertical (pode ser qualquer valor) */
-    left: 1px;
+    top: 0.4px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: 0.74px;
     z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
     
 }
@@ -102,10 +103,10 @@ body {
 
 /* Estilo para a imagem "Quadrado neon baixo" */
 .imagemNeonBaixo {
-    width: 550px; /* Largura fixa da imagem */
-    height: 550px; /* Altura fixa da imagem */
+    width: 300px; /* Largura fixa da imagem */
+    height: 300px; /* Altura fixa da imagem */
     border-radius: 20px; /* Borda arredondada */
-    margin: 9.4% 0 0 9.5%;
+    margin: 100.5% 0 0 100.8%;
 }
 
 
@@ -152,8 +153,8 @@ body {
 
     /* Estilo para a imagem "Quadrado neon cima" */
     .imagemNeonCima {
-        width: 100px; /* Largura fixa da imagem */
-        height: 100px; /* Altura fixa da imagem */
+        width: 150px; /* Largura fixa da imagem */
+        height: 150px; /* Altura fixa da imagem */
         border-radius: 20px; /* Borda arredondada */
         position: absolute;
 
