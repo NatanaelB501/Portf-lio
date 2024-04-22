@@ -71,24 +71,43 @@ body {
     color: #000000; /* Cor do texto */
 }
 
-/* Estilo para imagens */
-img {
-    width: 600px; /* Largura fixa da imagem */
-    height: 600px; /* Altura fixa da imagem */
-    border-radius: 20px; /* Borda arredondada */
-}
+
+/*Isso deu muito trabalho, NÃO MEXA NESSA IMAGENS */
 
 /* Estilo para o contêiner das imagens */
 .imagem-container {
     position: relative; /* Define o contexto de posicionamento */
 }
 
+/* Estilo para imagens */
 .imagemEu {
-    position: absolute; /* Posiciona a imagem de acordo com o contêiner */
-    top: -6px; /* Ajusta a posição vertical (pode ser qualquer valor) */
-    left: -6px; /* Ajusta a posição horizontal (pode ser qualquer valor) */
+    width: 600px; /* Largura fixa da imagem */
+    height: 600px; /* Altura fixa da imagem */
+    border-radius: 20px; /* Borda arredondada */
+    position: absolute;
+    top: 1px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: 1px;
     z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
+    
 }
+
+/* Estilo para a imagem "Quadrado neon cima" */
+.imagemNeonCima {
+    width: 550px; /* Largura fixa da imagem */
+    height: 550px; /* Altura fixa da imagem */
+    border-radius: 20px; /* Borda arredondada */
+    position: absolute;
+
+}
+
+/* Estilo para a imagem "Quadrado neon baixo" */
+.imagemNeonBaixo {
+    width: 550px; /* Largura fixa da imagem */
+    height: 550px; /* Altura fixa da imagem */
+    border-radius: 20px; /* Borda arredondada */
+    margin: 9.4% 0 0 9.5%;
+}
+
 
 /* Regras de mídia para dispositivos móveis */
 @media (max-width: 768px) {
@@ -114,29 +133,35 @@ img {
         width: 100%; /* Ajusta a largura do conteúdo */
     }
 
-    /* Estilo para imagens */
-img {
-    width: 100%;
-    max-width: 200px; /* Largura máxima da imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 3%; /* Bordas arredondadas */
-}
+        /*Isso deu muito trabalho, NÃO MEXA NESSA IMAGENS */
+        /* Estilo para imagens */
+    .imagemEu {
+        width: 150px; /* Largura fixa da imagem */
+        height: 150px; /* Altura fixa da imagem */
+        border-radius: 20px; /* Borda arredondada */
+        position: absolute;
+        top: 1px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+        left: 1px;
+        z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
+        
+    }
 
-/* Estilo para o contêiner das imagens */
-.imagem-container {
-    position: relative; /* Define o contexto de posicionamento */
-}
+    /* Estilo para a imagem "Quadrado neon cima" */
+    .imagemNeonCima {
+        width: 100px; /* Largura fixa da imagem */
+        height: 100px; /* Altura fixa da imagem */
+        border-radius: 20px; /* Borda arredondada */
+        position: absolute;
 
-.imagemEu {
-    width: 100%;
-    max-width: 200px; /* Largura máxima da imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 3%; /* Bordas arredondadas */
-    position: absolute; /* Posiciona a imagem de acordo com o contêiner */
-    top: -10px; /* Ajusta a posição vertical (pode ser qualquer valor) */
-    left: -3px; /* Ajusta a posição horizontal (pode ser qualquer valor) */
-    z-index: 1; /* Define a ordem de sobreposição (maior valor fica acima) */
-}
+    }
+
+    /* Estilo para a imagem "Quadrado neon baixo" */
+    .imagemNeonBaixo {
+        width: 125px; /* Largura fixa da imagem */
+        height: 125px; /* Altura fixa da imagem */
+        border-radius: 20px; /* Borda arredondada */
+        margin: 21.6% 0 0 21.6%;
+    }
 
     .apresentacao__conteudo__titulo {
         font-size: 24px; /* Aumenta o tamanho da fonte */
