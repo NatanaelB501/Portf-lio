@@ -7,14 +7,27 @@
     padding: 0;
 }
 
-/* Estilo básico do corpo da página */
-body {
-    height: 100vh; /* Altura total da viewport */
-    box-sizing: border-box; /* Garante que a altura do corpo inclua preenchimento e borda */
-    background-image: url(img/back.png);
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('img/back.png');
     background-size: cover;
     background-position: center;
+    opacity: 0.4; /* Defina a opacidade desejada para o plano de fundo */
+}
+
+/* Estilo básico do corpo da página */
+body {
+    background-color: #000000;
+    height: 100vh; /* Altura total da viewport */
+    box-sizing: border-box; /* Garante que a altura do corpo inclua preenchimento e borda */
     color: #F6F6F6; /* Cor do texto */
+    
 }
 
 /* Estilo para texto destacado */
@@ -100,6 +113,8 @@ body {
     height: 550px; /* Altura fixa da imagem */
     border-radius: 20px; /* Borda arredondada */
     position: absolute;
+    top: 0px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: 0px;
 
 }
 
@@ -159,6 +174,8 @@ body {
         height: 150px; /* Altura fixa da imagem */
         border-radius: 20px; /* Borda arredondada */
         position: absolute;
+        top: 0.99px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+        left: 0.4px;
 
     }
 
