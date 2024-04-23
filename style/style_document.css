@@ -1,0 +1,89 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Reseta as margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Defina a opacidade desejada para o plano de fundo */
+}
+
+/* Estilo básico do corpo da página */
+body {
+    background-color: #000000;
+    height: 100vh; /* Altura total da viewport */
+    box-sizing: border-box; /* Garante que a altura do corpo inclua preenchimento e borda */
+    color: #F6F6F6; /* Cor do texto */
+    
+}
+
+.cabecalho__menu {
+    padding: 0 0 0 1%;
+    background-color: #22d5fd18;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.cabecalho__menu__link1 {
+    display: flex;
+    justify-content: center;
+    padding: 0.8%;
+    /* width: 110px; */
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link1:hover {
+    font-size: 20.5px;
+    /* background-color: #22d5fd36; */
+}
+
+.cabecalho__menu__link2 {
+    padding: 1.1%;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link2:hover {
+    font-size: 16.05px;
+    /* background-color: #22d5fd36; */
+}
+
+.cabecalho__menu__link3 {
+    padding: 1.2%;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link3:hover {
+    font-size: 16.05px;
+    /* background-color: #22d5fd36; */
+}
