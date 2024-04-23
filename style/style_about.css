@@ -72,6 +72,22 @@ body {
     font-size: 16.05px;
 }
 
+.cabecalho__menu__link3 {
+    padding: 1.2%;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link3:hover {
+    font-size: 16.05px;
+    /* background-color: #22d5fd36; */
+}
+
+
 .apresentacao__conteudo__titulo {
     display: flex;
     flex-direction: column;
