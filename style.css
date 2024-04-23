@@ -30,6 +30,50 @@ body {
     
 }
 
+.cabecalho__menu {
+    padding: 0 0 0 1%;
+    background-color: #22d5fd18;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.cabecalho__menu__link1 {
+    display: flex;
+    justify-content: center;
+    padding: 0.8%;
+    /* width: 110px; */
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link1:hover {
+    font-size: 16.05px;
+    /* background-color: #22d5fd36; */
+}
+
+.cabecalho__menu__link2 {
+    padding: 0.8%;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link2:hover {
+    font-size: 16.05px;
+    /* background-color: #22d5fd36; */
+}
+
+
 /* Estilo para texto destacado */
 .texto-destaque {
     color: #22D4FD; /* Cor azul para texto destacado */
@@ -38,7 +82,7 @@ body {
 /* Estilo para a seção de apresentação do conteúdo */
 .apresentacao-do-conteudo {
     margin: 0 7%; /* Margens laterais de 7% */
-    padding: 8.5% 0; /* Preenchimento superior e inferior de 8.5% */
+    padding: 2.5% 0 2%; /* Preenchimento superior e inferior de 8.5% */
     display: flex; /* Usa o modelo de layout flexível */
     align-items: center; /* Centraliza verticalmente os itens */
     justify-content: space-around; /* Distribui uniformemente os itens horizontalmente */
@@ -46,6 +90,7 @@ body {
 
 /* Estilo para o conteúdo dentro da apresentação */
 .apresentacao__conteudo {
+    padding: 1% 0 0 0;
     width: 615px; /* Largura fixa do conteúdo */
     display: flex; /* Usa o modelo de layout flexível */
     flex-direction: column; /* Alinha os itens verticalmente em uma coluna */
@@ -69,21 +114,114 @@ body {
 /* Estilo para a seção de links dentro da apresentação */
 .apresentacao__links {
     display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column;
     justify-content: space-between; /* Distribui uniformemente os itens horizontalmente */
+    align-items: center;
+    gap: 32px;
+
+}
+
+.texto-acima-dos-links{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
 }
 
 /* Estilo para cada link dentro da seção de links */
-.link {
-    background-color: #22D4FD; /* Cor de fundo azul */
-    width: 280px; /* Largura fixa do link */
+.link1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 52px;
+    background-color: transparent; /* Cor de fundo */
+    width: 378px; /* Largura fixa do link */
     font-size: 24px; /* Tamanho da fonte */
     font-weight: 600; /* Peso da fonte */
     text-align: center; /* Alinhamento central */
-    border-radius: 16px; /* Borda arredondada */
+    border-radius: 20px; /* Borda arredondada */
     padding: 21.5px 0; /* Preenchimento superior e inferior */
     text-decoration: none; /* Remove sublinhado do link */
     font-family: "Montserrat", sans-serif; /* Fonte personalizada */
-    color: #000000; /* Cor do texto */
+    color: #f6f6f6; /* Cor do texto */
+    border: 2px dotted #22D4FD;
+}
+
+.link2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 65px;
+    background-color: transparent; /* Cor de fundo */
+    width: 378px; /* Largura fixa do link */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    text-align: center; /* Alinhamento central */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 21.5px 0; /* Preenchimento superior e inferior */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-family: "Montserrat", sans-serif; /* Fonte personalizada */
+    color: #f6f6f6; /* Cor do texto */
+    border: 2px dotted #22D4FD;
+}
+
+.link3 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    background-color: transparent; /* Cor de fundo */
+    width: 378px; /* Largura fixa do link */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    text-align: center; /* Alinhamento central */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 21.5px 0; /* Preenchimento superior e inferior */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-family: "Montserrat", sans-serif; /* Fonte personalizada */
+    color: #f6f6f6; /* Cor do texto */
+    border: 2px dotted #22D4FD;
+}
+
+
+.link1:hover {
+    background-color: #042c34;
+    font-size: 26px;
+    color: #22D4FD;
+    border: 2px solid #22d4fd;
+}
+
+.link2:hover {
+    background-color: #042c34;
+    font-size: 26px;
+    color: #22D4FD;
+    border: 2px solid #22d4fd;
+}
+
+.link3:hover {
+    background-color: #042c34;
+    font-size: 26px;
+    color: #22D4FD;
+    border: 2px solid #22d4fd;
+}
+
+.nomeAutor:hover {
+    color: #22d4fd;
+}
+
+.linguagens:hover {
+    color: #22d4fd;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: #F6F6F6;
+    /* background-color: #22D4FD; */
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 0.3%;
+    margin: 0.7% 0 0 0;
+    border-width: 1px;
+    border-style: inset;
+    border-color: #22D4FD transparent transparent transparent;
 }
 
 
@@ -113,8 +251,8 @@ body {
     height: 550px; /* Altura fixa da imagem */
     border-radius: 20px; /* Borda arredondada */
     position: absolute;
-    top: 0px; /* Ajusta a posição vertical (pode ser qualquer valor) */
-    left: 0px;
+    top:  -0.7px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+    left: -0.2px;
 
 }
 
@@ -174,7 +312,7 @@ body {
         height: 150px; /* Altura fixa da imagem */
         border-radius: 20px; /* Borda arredondada */
         position: absolute;
-        top: 0.99px; /* Ajusta a posição vertical (pode ser qualquer valor) */
+        top: 0.4px; /* Ajusta a posição vertical (pode ser qualquer valor) */
         left: 0.4px;
 
     }
