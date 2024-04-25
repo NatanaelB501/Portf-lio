@@ -46,8 +46,6 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 0.2%;
-    border-radius: 15px 15px 0 0;
-    
 }
 
 .cabecalho__menu__link1 {
@@ -327,33 +325,46 @@ body {
 @media(max-width: 768px) {
     .cabecalho__menu {
         justify-content: space-evenly;
-        padding: 0 0 0 0;
     }
 
     .cabecalho__menu__link1 {
         font-size: 1rem;
-        padding: 1.1%;
+        padding: 4%;
     }
 
+    .cabecalho__menu__link2 {
+        font-size: 1rem;
+        padding: 4%;
+    }
+
+    .cabecalho__menu__link3 {
+        font-size: 1rem;
+        padding: 4%;
+    }
+    
     .apresentacao-conteudo {
-        margin: auto;
-        width: auto;
         flex-direction: column;
     }
 
     .imagemEu {
-        padding: 10% 0 0 0;
-        width: 30%;
+        padding: 15% 0 0 0;
+        width: 50%;
     }
 
-    .apresentacao__conteudo__titulo {
-        padding: 20% 0 0 0;
-        text-align: center;
-        font-size: 0.9rem;
+    .apresentacao__do__conteudo {
         width: auto;
     }
 
+    .apresentacao__conteudo__titulo {
+        margin: 3% 0;
+        padding: 10% 0 0 0;
+        text-align: center;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
     .apresentacao__conteudo__texto {
+        margin: 1% 0 5% 0;
         padding: -10%;
         text-align: center;
         font-size: 1rem;
@@ -361,42 +372,48 @@ body {
     }
 
     .texto-acima-dos-links {
+        margin: -4% 0 -5% 0;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .caixa-dos-botoes {
-        margin: -10%;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         justify-content: center
 
     }
 
     .link1 {
+        align-items:center;
+        font-size: 0.8rem;
         width: 130%;
-        gap: 30px;
-        padding: 3% 0.1%;
+        gap: 20px;
+        padding: 3% 0;
         border: 2px dotted var(--cor-terciaria);
     }
 
     .link2 {
+        align-items:center;
+        font-size: 0.8rem;
         width: 130%;
-        gap: 50px;
-        padding: 3% 0.1%;
+        gap: 30px;
+        padding: 3% 0;
         border: 2px dotted var(--cor-terciaria);
     }
 
     .link3 {
+        align-items:center;
+        font-size: 0.8rem;
         width: 130%;
-        gap: 1xp;   
-        padding: 3% 0.1%;
+        padding: 3% 0;
         border: 2px dotted var(--cor-terciaria);
     }
 
     .rodape {
+        padding: 3%;
         font-size: 0.7rem;
-        margin: 4%;
+        margin: 3.6%;
     }
 
 }
