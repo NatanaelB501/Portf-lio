@@ -5,41 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-container">
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a class="cabecalho__menu__link1" href="index.html">Portfólio</a>
-                <a class="cabecalho__menu__link2" href="about.html">Quem sou eu</a>
-                <a class="cabecalho__menu__link3" href="document.html">Currículo</a>
-            </nav>
-        </header>
-        <main class="apresentacao-conteudo"> 
-                <img class="imagemEu" src="./img/eu_menor.png" alt="Dono do portfólio">
-            <section class="apresentacao__do__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">Eleve o patamar do seu empreendimento digital  <strong class="texto-destaque"> com um Front-end de excelência!</strong></h1>
-                <p class="apresentacao__conteudo__texto">Olá! Me chamo <strong class="nomeAutor">Natanael Borges</strong>, especialista em Front-end com foco em <strong class="linguagens"> JavaScript, HTML e CSS.</strong> Estou aqui para auxiliar pequenos e grandes empreendedores a transformarem suas ideias em realidade. Vamos trabalhar juntos?</p>
-                <div class="apresentacao__links">
-                    <h2 class="texto-acima-dos-links">Entre em contato:</h2>
-                        <div class="caixa-dos-botoes">
-                            <a class="link1" href="https://www.linkedin.com/in/natanael-borges-de-oliveira-528333120" target="_blank">
-                                Linkedin<img src="./assets/linkedin.png">
-                            </a>
-                            <a class="link2" href="https://github.com/NatanaelB501" target="_blank">
-                                GitHub<img src="./assets/github.png">
-                            </a>
-                            <a class="link3" href="https://wa.me/5534998886841?text=Olá, Natanael. Vim pelo link do seu portfólio." target="_blank">
-                                WhatsApp<img src="./assets/whatsapp.png">
-                            </a>
-                        </div>
-                </div>
-            </section>
-            
-        </main>
-        <footer class="rodape" >
-            <p>© Natanael Borges de Oliveira - 2024 - Todos os direitos reservados</p>
-        </footer>
-    </div>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <ul class="cabecalho__lista">
+                <li>
+                    <a class="cabecalho__menu__link botao__portfolio" href="index.html">Portfólio</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="about.html">Quem sou eu</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="document.html">Currículo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container principal">
+        <img src="./img/eu_menor.png" alt="imagem dono do portfolio" class="foto__principal">
+        <div class="apresentacao">
+            <div class="apresentacao__inicio">
+                <h1 class="apresentacao__titulo">Eleve o patamar do seu empreendimento digital  <strong class="titulo-destaque"> com um Front-end de excelência!</strong></h1>
+                <h2 class="apresentacao__texto">Olá! Me chamo <strong class="texto-destaque">Natanael Borges</strong>, especialista em Front-end com foco em <strong class="texto-destaque"> JavaScript, HTML e CSS.</strong> Estou aqui para auxiliar pequenos e grandes empreendedores a transformarem suas ideias em realidade. Vamos trabalhar juntos?</h2>
+            </div>
+            <div class="apresentacao__contato">
+                <p class="texto__contato">Baixe meu <stong class="curriculo">currículo</stong> ou entre em contato:</p>
+                <ul class="botoes__contato">
+                    <li class="botoes__lista">
+                        <a  class="botao__link" href="https://www.linkedin.com/in/natanael-borges-de-oliveira-528333120" target="_blank">Linkedin<img src="./assets/linkedin.png" alt="icone linkedin"  class="icone__botao"></a>
+                        <a  class="botao__link botao-github" href="https://github.com/NatanaelB501" target="_blank">GitHub<img src="./assets/github.png" alt="icone github"  class="icone__botao"></a>
+                        <a  class="botao__link" href="https://wa.me/5534998886841?text=Olá, Natanael. Vim pelo link do seu portfólio." target="_blank">WhatsApp<img src="./assets/whatsapp.png" alt="icone whatsapp"  class="icone__botao"></a>
+                        <a  class="botao__link" href="https://docs.google.com/document/d/1rrHToR11obh9v-piybrYf8-7TZrGGQB8i9B9njeXE-U/edit?usp=sharing" target="_blank">Currículo<img src="./assets/curriculo.png" alt="icone curriculo" class="icone__botao"></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="titulo__historia">
+            <h2 class="apresentacao__titulo">Minhas experiências, minha
+                <strong class="titulo-destaque">história!</strong></h2>
+                <p class="aviso">*Para mais detalhes sobre o tempo em cada experiência, baixe o meu <a class="botao__dentro__do__aviso" href="https://docs.google.com/document/d/1rrHToR11obh9v-piybrYf8-7TZrGGQB8i9B9njeXE-U/edit?usp=sharing" target="_blank">currículo</a>.</p>
+        </div>
+        <div class="caixa__terceira">
+            <p class="apresentacao__texto texto__paragrafo">Com uma paixão precoce pela informática, <strong class="destaques-do-texto">mergulhei no mundo dos sistemas e hardware desde os meus 15 anos</strong>, quando a tecnologia ainda era um território pouco explorado. Comecei minha trajetória profissional no <strong class="destaques-do-texto">Exército, aos 18 anos</strong>, onde adquiri uma base sólida em tecnologia e segurança da informação.</p>
+            <img src="./img/soldado.jpg" alt="soldado sentado" class="foto__paragrafo">
+        </div>
+        <div class="caixa__terceira">
+            <img src="./img/transito.jpg" alt="rapaz trablhando no laptop" class="foto__paragrafo">
+            <p class="apresentacao__texto texto__paragrafo">Posteriormente, ingressei em uma secretaria de trânsito, onde fui responsável por uma variedade de tarefas, desde o preenchimento de <strong class="destaques-do-texto">planilhas até a confecção de documentos no Word</strong>, além de fornecer suporte técnico para todos os computadores e impressoras da instituição. Lá eu adquiri uma boa experiência no pacote <strong class="destaques-do-texto">Microsoft Office.</strong></p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="caixa__terceira">
+            <p class="apresentacao__texto texto__paragrafo">Minha jornada profissional também incluiu uma passagem por uma empresa de crédito, onde desempenhei o papel crucial de <strong class="destaques-do-texto">analisar perfis de clientes e garantir a segurança dos dados</strong>, além de ter aprimorado meu conhecimento em <strong class="destaques-do-texto">intranet e infraestrutura.</strong> Aprendi muito sobre <strong class="destaques-do-texto">estruturação de redes, compliance e relacionamento com clientes.</strong></p>
+            <img src="./img/credito.jpg" alt="homem trabalhando" class="foto__paragrafo">
+        </div>
+        <div class="caixa__terceira">
+            <img src="./img/seguranca.jpg" alt="homem trabalhando" class="foto__paragrafo">
+            <p class="apresentacao__texto texto__paragrafo">Como especialista em segurança residencial, assumi a responsabilidade de <strong class="destaques-do-texto">projetar e implementar infraestruturas</strong> para sistemas de vigilância, assegurando que as imagens de segurança chegassem de forma eficiente à central de monitoramento. Desenvolvi bastante meu conhecimento em <strong class="destaques-do-texto">infraestrutura.</strong></p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="caixa__terceira">
+            <p class="apresentacao__texto texto__paragrafo"><strong class="destaques-do-texto">Fui líder</strong> de jovens, adolescentes e louvor em uma igreja, onde descobri minha paixão por <strong class="destaques-do-texto">liderar, ensinar e trabalhar em equipe.</strong></p>
+            <img src="./img/lider.jpg" alt="lider em um palco" class="foto__paragrafo">
+        </div>
+        <div class="caixa__terceira">
+            <img src="./img/socio.jpg" alt="socio empresario" class="foto__paragrafo">
+            <p class="apresentacao__texto texto__paragrafo">Além disso, me tornei <strong class="destaques-do-texto">CEO de uma pequena empresa</strong> de internet, onde adquiri minha parte com mão de obra devido à falta de recursos financeiros na época. Trabalhei arduamente por mais de 3 anos, construindo uma <strong class="destaques-do-texto">infraestrutura de redes e comunicação robusta</strong>, fornecendo internet para mais de 100 clientes e estabelecendo links ponto a ponto de longas distâncias. Essa experiência não apenas me proporcionou <strong class="destaques-do-texto">habilidades técnicas sólidas,</strong> mas também me permitiu desenvolver competências em <strong class="destaques-do-texto">vendas e compreensão do mercado por meio da interação com os clientes.</strong></p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="caixa__terceira">
+            <p class="apresentacao__texto texto__paragrafo">Atualmente estou cursando <strong class="destaques-do-texto">Ciência da Computação - Bacharelado,</strong> o que tem ampliado meu conhecimento <strong class="destaques-do-texto">teórico e prático na área.</strong> Paralelamente, estou dedicando meu tempo ao estudo de <strong class="destaques-do-texto">programação,</strong> atualmente conquistei e continuo conquistando certificados em <strong class="destaques-do-texto">Front-end - JavaScript, HTML 5</strong> e <strong class="destaques-do-texto">CSS,</strong> além de estudar <strong class="destaques-do-texto">linguagem Python.</strong> Estou visando aprimorar minhas habilidades e acompanhar as demandas do mercado de <strong class="destaques-do-texto">tecnologia.</strong></p>
+            <img src="./img/programador.jpg" alt="programador" class="foto__paragrafo">
+        </div>
+        <div class="caixa__terceira">
+            <img src="./img/programador-2.jpg" alt="programador-2" class="foto__paragrafo">
+            <p class="apresentacao__texto texto__paragrafo">Essas experiências moldaram minha <strong class="destaques-do-texto">trajetória profissional</strong> e me proporcionaram uma sólida base de habilidades em <strong class="destaques-do-texto">tecnologia da informação</strong>, <strong class="destaques-do-texto">segurança de dados</strong>, <strong class="destaques-do-texto">gestão de infraestrutura</strong>, <strong class="destaques-do-texto">programação front-end</strong> e outras dentro da área. Estou entusiasmado em continuar minha <strong class="destaques-do-texto">jornada profissional e acadêmica,</strong> buscando oportunidades para aplicar meu conhecimento e contribuir para o avanço da <strong class="destaques-do-texto">tecnologia e da sociedade.</strong></p>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>© Natanael Borges de Oliveira - 2024 - Todos os direitos reservados.</p>
+        <p>Todas as imagens foram geradas por mim mesmo no photoshop e algumas por inteligências artificias através de prompts escritos por mim.</p>
+    </footer>
 </body>
 </html>
